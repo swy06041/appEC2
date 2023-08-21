@@ -7,16 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @ResponseBody
-@RequestMapping("/api2")
+@RequestMapping("/api")
 public class TestController {
 
     @GetMapping("/getArr")
     public String[] getArr() {
         return new String[]{"AAA", "BBB", "CCC"};
     }
-
-//    @GetMapping("/nice")
-//    public String asd() {
-//        return "nice";
-//    }
 }
